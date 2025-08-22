@@ -1,0 +1,280 @@
+
+@font-face{
+  font-family: 'OldEnglishWeb';
+  src: url('OldEnglishTextMT.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{ margin:0; text-align:center; background:#fff; }
+
+h1.site-title{
+  font-family: 'OldEnglishWeb';
+  font-size: 96px;
+  line-height:0.9;
+  margin:28px 0 6px;
+  letter-spacing:1px;
+  color:#000;
+  text-shadow:0 1px 0 rgba(0,0,0,0.06);
+}
+    body {
+        font-family: 'OldEnglishWeb';
+        margin: 0;
+        padding: 0;
+        background: #f8f8f8;
+        color: #222;
+    }
+    header {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 3em;
+        font-weight: bold;
+    }
+    nav {
+        background: black;
+        color: white;
+        padding: 10px 0;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .articles {
+      column-count: 4; 
+      column-gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+  }
+    .comics {
+    column-count: 1; 
+    column-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+  
+  .location-date-bar {
+    font-family: 'Old Standard TT', serif; /* Or your preferred newspaper font */
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 8px 20px;
+    background: #f5f5f5; /* Light gray background */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.location {
+    font-weight: bold;
+    color: #333;
+}
+
+.date {
+    color: #666;
+}
+  
+  .article {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      break-inside: avoid; 
+      margin-bottom: 20px;
+      grid-column: span 1;
+  }
+  .article.wide {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      break-inside: avoid; 
+      margin-bottom: 20px;
+      grid-column: span 2;
+  }
+    .article h2 {
+        font-family: 'serif';
+        font-size: 1.4em;
+        margin-bottom: 10px;
+        color: #000000;
+    }
+    .article p {
+        font-family: 'serif';
+        font-size: 0.9em;
+        color: #555;
+    }
+    
+    .article img{
+      width: 100%;
+      height: Auto; 
+      display: block;
+      margin-bottom: auto; 
+    
+    }
+
+    .comic {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      break-inside: avoid; 
+      margin-bottom: 20px;
+      grid-column: span 2;
+  }
+    .comic h2 {
+        font-family: 'serif';
+        font-size: 1.4em;
+        margin-bottom: 10px;
+        color: #000000;
+    }
+    .comic p {
+        font-family: 'serif';
+        font-size: 0.9em;
+        color: #555;
+    }
+    
+    .comic img{
+      width: 100%;
+      height: auto; 
+      display: block;
+      margin-bottom: auto; 
+    
+    }
+
+    .next-page-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+      z-index: 1000;
+  }
+  
+  .next-page-btn:hover {
+      background: #444;
+  }
+
+  #crossword-wrapper {
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers horizontally */
+  width: 100%;
+  max-width: calc(12 * 42px + 11 * 1px); /* Match grid width */
+  margin: 0 auto;
+  padding: 20px 0;
+  }
+  
+  /* Set exact size for the crossword grid */
+  #crossword {
+    display: grid;
+    grid-template-columns: repeat(12, 42px);
+    grid-template-rows: repeat(12, 42px);
+    gap: 1px;
+    background: black;
+    width: calc(12 * 42px + 11 * 1px); /* 12 cells + 11 gaps */
+    height: calc(12 * 42px + 11 * 1px);
+  }
+  
+  /* Cell styling */
+  .cell {
+    position: relative;
+    background: white;
+  }
+  
+  .black {
+    background: black;
+  }
+  
+  .number {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 8px;
+    font-weight: bold;
+  }
+  
+  .letter-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    background: transparent;
+  }
+
+  .correct {
+    background-color: #d4edda !important;
+    border: 1px solid #c3e6cb !important;
+}
+
+.incorrect {
+    background-color: #f8d7da !important;
+    border: 1px solid #f5c6cb !important;
+}
+
+/* Center the crossword */
+#crossword-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style the check button */
+#check-button {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #000000; /* Green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#check-button:hover {
+  background-color: #c19616; /* Darker green */
+}
+
+.focused-cell {
+  box-shadow: 0 0 0 2px #4CAF50;
+  z-index: 1;
+  position: relative;
+}
+
+.active-cell {
+  transform: scale(1.03);
+  transition: transform 0.2s;
+}
+
+.letter-input {
+  transition: all 0.2s;
+}
+
+
+/* Black cell styling */
+.black {
+  pointer-events: none; /* Prevent focusing on black cells */
+}
+

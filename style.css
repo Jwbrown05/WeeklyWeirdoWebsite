@@ -11,7 +11,7 @@ body{ margin:0; text-align:center; background:#fff; }
 
 h1.site-title{
   font-family: 'OldEnglishWeb';
-  font-size: 96px;
+  font-size: 5vw;
   line-height:0.9;
   margin:28px 0 6px;
   letter-spacing:1px;
@@ -28,7 +28,7 @@ h1.site-title{
     header {
         text-align: center;
         padding: 20px 0;
-        font-size: 3em;
+        font-size: 5vw;
         font-weight: bold;
     }
     nav {
@@ -68,7 +68,7 @@ h1.site-title{
   
   .location-date-bar {
     font-family: 'Old Standard TT', serif; /* Or your preferred newspaper font */
-    font-size: 0.9em;
+    font-size: 1vw;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 8px 20px;
@@ -109,13 +109,13 @@ h1.site-title{
   }
     .article h2 {
         font-family: 'serif';
-        font-size: 1.4em;
+        font-size: 1.6vw;
         margin-bottom: 10px;
         color: #000000;
     }
     .article p {
         font-family: 'serif';
-        font-size: 0.9em;
+        font-size: 1vw;
         color: #555;
     }
     
@@ -138,13 +138,13 @@ h1.site-title{
   }
     .comic h2 {
         font-family: 'serif';
-        font-size: 1.4em;
+        font-size: 1.4vw;
         margin-bottom: 10px;
         color: #000000;
     }
     .comic p {
         font-family: 'serif';
-        font-size: 0.9em;
+        font-size: 0.9vw;
         color: #555;
     }
     
@@ -278,3 +278,66 @@ h1.site-title{
   pointer-events: none; /* Prevent focusing on black cells */
 }
 
+.container2 {
+  position: absolute;  /* keeps it in place as you scroll */
+  top: 150px;
+  left: 15px;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1001; /* make sure it’s above the side menu */
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 0.5px;
+  background-color: #ffffff;
+  margin: 5px 0;
+  transition: 0.4s;
+
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 6px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -6px) rotate(45deg);
+}
+
+/* Side Menu (hidden by default) */
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 150px;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 999;
+}
+
+/* Links inside side menu */
+.side-menu a {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  background: #444;
+}
+
+/* When menu is open */
+.side-menu.open {
+  width: 200px;
+}

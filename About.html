@@ -11,17 +11,48 @@
 <header>The Weekly Weirdo</header>
 
 <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Crossword.html">Crossword</a></li>
-        <li><a href="Request.html">Request an Ad</a></li>
-        <li><a href="Comics.html">Comics</a></li>
-        <li><a href="Events.html">Events</a></li>
-        <li><a href="About.html">About</a></li>
-    </ul>
+  <ul>
+      <div class="container3" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <script>
+          function myFunction(x) {
+          x.classList.toggle("change");
+          document.getElementById("sideMenu2").classList.toggle("open");
+          if (document.getElementById("sideMenu2").classList.toggle("closed")) {
+              document.body.style.overflow = 'hidden'; 
+
+           } 
+          else {
+              document.body.style.overflow = 'auto';
+  }
+  }
+  </script>
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Crossword.html">Crossword</a></li>
+      <li><a href="Request.html">Request an Ad</a></li>
+      <li><a href="Comics.html">Comics</a></li>
+      <li><a href="Events.html">Events</a></li>
+      <li><a href="About.html">About</a></li>
+  </ul>
 </nav>
 
-</nav>
+<div id="sideMenu2" class="side-menu2">
+  <h3> Running Series:</h3>
+  <a href="#">Birdworld</a>
+  <a href="#"> Running Issue 2</a>
+  <a href="#">More</a>
+  <h3> Archive of Older <br> issues:</h3>
+  <a href="#">Articles</a>
+  <a href="#">Comics</a>
+  <h3> Weekly Weirdo <br> presents: </h3>
+  <a href="#">Audiobooks</a>
+  <a href="#">Sound Scapes</a>
+  <a href="https://www.youtube.com/@WeeklyWeirdo">Youtube</a>
+</div>
 
 
 </body>

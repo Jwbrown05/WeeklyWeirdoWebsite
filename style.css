@@ -57,6 +57,11 @@ h1.site-title{
         font-weight: bold;
         font-family: S;
     }
+    h4 {
+      font-size: 1rem;     
+      font-weight: normal; 
+      margin: 0;           
+    }
     .articles {
       column-count: 4; 
       column-gap: 20px;
@@ -288,7 +293,7 @@ h1.site-title{
   pointer-events: none; /* Prevent focusing on black cells */
 }
 
-.container2 {
+.container1 {
   position: absolute;  /* keeps it in place as you scroll */
   top: 150px;
   left: 15px;
@@ -296,7 +301,7 @@ h1.site-title{
   cursor: pointer;
   z-index: 1001; /* make sure it’s above the side menu */
 }
-.container3 {
+.container2 {
   position: absolute;  /* keeps it in place as you scroll */
   top: 120px;
   left: 15px;

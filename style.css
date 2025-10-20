@@ -11,7 +11,7 @@ body{ margin:0; text-align:center; background:#fff; }
 
 h1.site-title{
   font-family: 'OldEnglishWeb';
-  font-size: 5vw;
+  font-size: 5em;
   line-height:0.9;
   margin:28px 0 6px;
   letter-spacing:1px;
@@ -28,7 +28,7 @@ h1.site-title{
     header {
         text-align: center;
         padding: 20px 0;
-        font-size: 5vw;
+        font-size: 4.5em;
         font-weight: bold;
     }
     nav {
@@ -607,4 +607,23 @@ transition: all 0.2s;
 }
 @media (max-width: 500px) {
   .articles { column-count: 1; }
+}
+@media (max-width: 700px) {
+  nav ul {
+    flex-wrap: wrap;
+    gap: 5px;             
+    justify-content: center;
+    padding: 5px;
+  }
+  .container1 {
+    display: none;
+  }
+  .container2 {
+    display: none;
+  }
+}
+@media (max-width: 450xpx) {
+  nav ul li a {
+    font-size: 0.825em;
+  }
 }

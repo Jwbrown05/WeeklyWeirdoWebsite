@@ -185,7 +185,6 @@ h1.site-title{
       text-decoration: none;
       font-weight: bold;
       box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      transition: background 0.3s;
       z-index: 1000;
   }
   
@@ -495,6 +494,59 @@ footer {
   padding: 0.5rem;
   font-size: 0.9rem;
   margin-top: 2rem;
+}
+
+#popUp {
+  background: rgb(255, 255, 255);
+  border: 2px solid black;
+  padding: 20px;
+  position: fixed; /* Changed from absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers it perfectly */
+  z-index: 999999;
+  display: none;
+  max-width: 90vw; /* Prevents it from being too wide on small screens */
+  max-height: 90vh; /* Prevents it from being too tall */
+}
+
+#popUp button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+#popUp button:hover {
+  color: #000;
+  background: rgba(0,0,0,0.1);
+}
+
+#popUp img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#popUp #dismissButton {
+  position: relative;
+  background: #000;
+  border: #fff;
+  font-family: 'OldEnglishWeb';
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+#popUp #dismissButton:hover {
+  color: #000;
+  background: rgba(0,0,0,0.1);
 }
 
 

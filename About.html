@@ -3,13 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="PopUp.js" defer></script>
 <title>The Weekly Weirdo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>The Weekly Weirdo</header>
-
+<div id="popUp" class="popUp">
+  <button onclick="closePopUp()">&times;</button>
+  <img src="ABC.jpg" alt="Advertising">
+  <audio id = "popUpAudio"> 
+    <source scr="ABC.mp3" type="audio/mpeg"> 
+  </audio>
+  <button id="dismissButton" onclick="playAudio()">Dismiss Offer</button>
+</div>
 <nav>
       <div class="container2" onclick="myFunction(this)">
           <div class="bar1"></div>

@@ -15,13 +15,26 @@ if (popUpElement) {
 function playAudio() {
 const rand = Math.random();
         let audioSrc;
-        if (rand <= 0.140) {audioSrc = 'ABC.mp3';}   
-        else if (rand > 0.140 && rand <= 0.290) {audioSrc = 'Audio.mp3';}
-        else if (rand > 0.290 && rand <= 0.440) {audioSrc = 'Audio2.mp3';}
-        else if (rand > 0.440 && rand <= 0.590) {audioSrc = 'Audio3.mp3';}
-        else if (rand > 0.590 && rand <= 0.740) {audioSrc = 'Audio4.mp3';}
-        else if (rand > 0.740 && rand <= 0.890) {audioSrc = 'Audio5.mp3';}
-        else {audioSrc = 'Audio6.pm3';}
+        if (rand < 1/20) audioSrc = 'ABC.mp3';
+        else if (rand < 2/20) audioSrc = 'Audio.mp3';
+        else if (rand < 3/20) audioSrc = 'Audio2.mp3';
+        else if (rand < 4/20) audioSrc = 'Audio3.mp3';
+        else if (rand < 5/20) audioSrc = 'Audio4.mp3';
+        else if (rand < 6/20) audioSrc = 'Audio5.mp3';
+        else if (rand < 7/20) audioSrc = 'Audio6.mp3';
+        else if (rand < 8/20) audioSrc = 'Audio7.mp3';
+        else if (rand < 9/20) audioSrc = 'Audio8.mp3';
+        else if (rand < 10/20) audioSrc = 'Audio9.mp3';
+        else if (rand < 11/20) audioSrc = 'Audio10.mp3';
+        else if (rand < 12/20) audioSrc = 'Audio11.mp3';
+        else if (rand < 13/20) audioSrc = 'Audio12.mp3';
+        else if (rand < 14/20) audioSrc = 'Audio13.mp3';
+        else if (rand < 15/20) audioSrc = 'Audio14.mp3';
+        else if (rand < 16/20) audioSrc = 'Audio15.mp3';
+        else if (rand < 17/20) audioSrc = 'Audio16.mp3';
+        else if (rand < 18/20) audioSrc = 'Audio17.mp3';
+        else if (rand < 19/20) audioSrc = 'Audio18.mp3';
+        else {audioSrc = 'Audio19.mp3';}
         popUpAudio.src = audioSrc;
         document.getElementById('popUpAudio').play()
 }

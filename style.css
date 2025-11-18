@@ -674,7 +674,7 @@ transition: all 0.2s;
     display: none;
   }
 }
-@media (max-width: 450xpx) {
+@media (max-width: 450px) {
   nav ul li a {
     font-size: 0.825em;
   }
